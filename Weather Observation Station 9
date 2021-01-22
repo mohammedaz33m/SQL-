@@ -1,0 +1,8 @@
+# MySQL:
+
+SELECT DISTINCT CITY 
+FROM STATION 
+WHERE CITY NOT IN (
+                   SELECT DISTINCT CITY 
+                   FROM STATION 
+                   WHERE CITY REGEXP "^[a,e,i,o,u]" );      # Here we are filtering the solutions of cities starting with vowels with 'NOT IN' Key word
