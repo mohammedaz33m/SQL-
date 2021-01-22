@@ -2,10 +2,10 @@
 
 SELECT DISTINCT CITY 
  FROM STATION 
- WHERE CITY REGEXP "^[a,e,i,o,u]" GROUP BY CITY;
+ WHERE CITY REGEXP "^[a,e,i,o,u]" ;  #Here the ^ symbol means- starts with in MySQL
  
  ## MS SQL SERVER:
  
  SELECT DISTINCT CITY 
  FROM STATION 
- WHERE CITY LIKE "[a,e,i,o,u]%" GROUP BY CITY;
+ WHERE CITY LIKE "[a,e,i,o,u]%" ;
